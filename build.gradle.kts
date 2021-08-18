@@ -12,6 +12,8 @@ plugins {
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
+    id("org.springframework.boot") version "2.5.3"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 
 repositories {
@@ -21,14 +23,16 @@ repositories {
 
 dependencies {
     // Use the latest Groovy version for building this library
-    implementation("org.codehaus.groovy:groovy-all:3.0.7")
+    implementation("org.codehaus.groovy:groovy-all:3.0.8")
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:30.0-jre")
-
+    implementation("org.springframework.boot:spring-boot-starter-web:2.5.3")
+    testImplementation ("org.springframework.boot:spring-boot-starter-test:2.5.3")
     // Use the awesome Spock testing and specification framework even with Java
-    testImplementation("org.spockframework:spock-core:2.0-M4-groovy-3.0")
-    testImplementation("junit:junit:4.13.1")
+    testImplementation("org.spockframework:spock-core:2.0-groovy-3.0")
+    testImplementation("org.spockframework:spock-spring:2.0-groovy-3.0")
+    testImplementation("junit:junit:4.13.2")
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api("org.apache.commons:commons-math3:3.6.1")
