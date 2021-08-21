@@ -6,9 +6,11 @@ Examples for groovy spock tests
 * [Integers](src/test/groovy/com/tidhar/examples/CalculatorTest.groovy)
 * [Strings](src/test/groovy/com/tidhar/examples/HelloWorldTest.groovy)
 * [String Manipulations](src/test/groovy/com/tidhar/examples/StringManipulationTest.groovy)
+* [Regular Expressions](src/test/groovy/com/tidhar/examples/RegexExamplesTest.groovy)
 
 ## Class Interaction using Groovy mock
 * [Simple groovy mock](src/test/groovy/com/tidhar/examples/services/DeployerTest.groovy)
 
 ## Spring Boot tests
 * [Simple rest controller test](src/test/groovy/com/tidhar/examples/app/controllers/BasicSpringBootRestControllerTest.groovy)
+

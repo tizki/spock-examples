@@ -26,8 +26,9 @@ dependencies {
     implementation("org.codehaus.groovy:groovy-all:3.0.8")
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    implementation("com.google.guava:guava:30.0-jre")
+    implementation("com.google.guava:guava:30.1.1-jre")
     implementation("org.springframework.boot:spring-boot-starter-web:2.5.3")
+    implementation("org.springframework.retry:spring-retry:1.3.1")
     testImplementation ("org.springframework.boot:spring-boot-starter-test:2.5.3")
     // Use the awesome Spock testing and specification framework even with Java
     testImplementation("org.spockframework:spock-core:2.0-groovy-3.0")
